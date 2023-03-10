@@ -16,7 +16,7 @@ jobs:
       tagName: v1.13.1
       msvcTargetZip: libtorch-${{ github.ref_name }}-msvc2019.zip
     steps:
-      - name: git clone tinynurbs
+      - name: git clone libtorch
         shell: cmd
         run: git clone --recurse-submodule https://github.com/pytorch/pytorch.git && cd pytorch && git checkout ${{ env.tagName }}
         
