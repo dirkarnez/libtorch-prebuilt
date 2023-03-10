@@ -45,7 +45,7 @@ jobs:
           cmake.exe -G "Visual Studio 16 2019" -A x64 ^
           -DBUILD_SHARED_LIBS:BOOL=ON ^
           -DCMAKE_BUILD_TYPE:STRING=Release ^
-          -DPYTHON_EXECUTABLE:PATH="%CD_LINUX%/python-3.10.8-amd64-portable" ^
+          -DPYTHON_EXECUTABLE:PATH="%CD_LINUX%/python-3.10.8-amd64-portable/python.exe" ^
           -DCMAKE_INSTALL_PREFIX="cmake-build/${{ env.cmakeInstallationPath }}" ^
           -B./cmake-build &&^
           cd cmake-build &&^
